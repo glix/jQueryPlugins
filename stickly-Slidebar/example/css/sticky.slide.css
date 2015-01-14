@@ -1,0 +1,8 @@
+.ss_widget {  position: absolute; height: 235px;  left: -710px; top: 14%; visibility: hidden; width: 755px; }
+.ss_handler { float: right; width: 45px; -webkit-box-shadow: 2px 1px 4px #222; -moz-box-shadow: 2px 1px 4px #222; box-shadow: 2px 1px 4px #222; border-top-right-radius: 10px 10px; border-bottom-right-radius: 10px 10px; -moz-border-radius-topright: 10px 10px; -moz-border-radius-bottomright: 10px 10px; -webkit-border-top-right-radius: 10px 10px; -webkit-border-bottom-right-radius: 10px 10px; }
+.ss_handler_close { background: transparent url(../imgs/close_handler.png) no-repeat; }
+.ss_handler_open { background: transparent url(../imgs/open_handler.png) no-repeat; }
+.ss_handler_link { outline: none; display: block; width: 45px; height: 250px; }
+.ss_content { float: left; margin: 0 auto 0; width: 710px; background: #E5E5DD url(../imgs/101226_f10_slider_bg.jpg) repeat-x; height: 250px; -moz-box-shadow: 3px 3px 5px #222; -webkit-box-shadow: 3px 1px 6px #222; box-shadow: 3px 3px 5px #222; }
+.ss_loading { padding-top: 13%; padding-left: 40%; color: #436331; font-size: 14px; }
+	

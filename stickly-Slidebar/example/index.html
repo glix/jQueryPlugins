@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<title>jQuery Sticky Slider Demo</title>	
+</head>
+
+<body>
+
+	<link type="text/css" rel="stylesheet" href="css/sticky.slide.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	
+	<div id="any_container">     		
+		<div class="ss_widget">		
+		  <div class="ss_content">			
+			<p class="ss_loading">Loading Content ...</p>			
+		  </div><!-- /.ss_content -->		  
+		  <div class="ss_handler ss_handler_open"><a class="ss_handler_link" href="#"></a></div><!-- /.ss_handler -->		  
+		</div><!-- /.ss_widget -->	
+	</div><!-- /#any_container -->
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.sticky.slide.js"></script>
+	
+	<script type="text/javascript">				
+		$('.ss_widget').stickySlide();		
+	</script>
+
+</body>
+</html>
