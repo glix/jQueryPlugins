@@ -1,0 +1,77 @@
+/* drop down menu styles */
+.styled {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	background: url(dropdown-icon.png) no-repeat 100% #7961aa;
+}
+.styled select {
+	border: none;
+	background: transparent;
+	padding: 5px;
+	height: 50px;
+	color: #fff;
+	-webkit-appearance: none;
+	width: 100%;
+	text-indent: 5px;
+	font-size: 16px;
+	-moz-appearance: none;
+	text-indent:0.01px;
+	text-overflow: '';
+}
+.styled select option {
+	background-color:#fff;
+	color:#7961aa;
+}
+.styled .selected { /* needed for FF and IE */
+	color: #fff;
+	background-color:#7961aa;
+}
+/* IE hack */
+@media screen\0 {
+.styled {
+	background: #7961aa;
+}
+}
+/* subheader styles */
+h3.header {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font-size: 16px;
+	min-height: 49px;
+	position:relative;
+}
+.headerColumn1 {
+	font-weight: normal;
+	width: auto;
+	float: left;
+	margin: 0 54px 5px 5px; line-height:44px;
+}
+.headerColumn2 {
+	width: 44px;
+	right: 0;
+	float: left;
+	margin: 0 5px 5px 0;
+	position: absolute;
+}
+/* expanded content styles */
+.expandContent {
+	max-width: 100%;
+	clear: left;
+	margin-top: 5px;
+}
+.expandedContent {
+	max-width: 100%;
+	clear: left;
+	margin: 5px 5px 10px 5px;
+	font-size: 14px;
+}
+.expandedContentClearFloat {
+	width: 100%;
+	clear: left;
+	border-bottom-color: #7961aa;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	border-color: #7961aa;
+}
