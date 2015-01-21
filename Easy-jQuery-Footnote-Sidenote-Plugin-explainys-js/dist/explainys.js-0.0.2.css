@@ -1,0 +1,51 @@
+.explainys
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 6px;
+    padding: 6px;
+
+    background-color: #f7f7f7;
+
+         -o-box-sizing: border-box;
+}
+.explainys > p
+{
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
+}
+
+.explainys > summary
+{
+    cursor: pointer;
+}
+.explainys > summary:focus
+{
+    outline: none;
+}
+.explainys-title
+{
+    display: inline-block;
+
+    width: 75%;
+
+    vertical-align: top;
+    word-break: break-all;
+}
+.explainys-number
+{
+    font-family: Monospace;
+
+    display: inline-block;
+    float: right;
+}
+.explainys-number::after
+{
+    content: ']';
+}
+.explainys-number::before
+{
+    content: '[';
+}

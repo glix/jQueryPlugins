@@ -1,0 +1,39 @@
+.explainys {
+  background-color: #f7f7f7;
+  padding: 6px;
+  margin-bottom: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.explainys > p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.explainys > summary {
+  cursor: pointer;
+}
+.explainys > summary:focus {
+  outline: none;
+}
+.explainys-title {
+  word-break: break-all;
+  display: inline-block;
+  vertical-align:top;
+  width: 75%;
+}
+.explainys-number {
+  display: inline-block;
+  float: right;
+  font-family: Monospace;
+}
+.explainys-number::after {
+  content: ']';
+}
+.explainys-number::before {
+  content: '[';
+}
+

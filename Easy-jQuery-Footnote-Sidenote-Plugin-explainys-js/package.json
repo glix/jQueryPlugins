@@ -1,0 +1,32 @@
+{
+  "name": "explainys.js",
+  "version": "0.0.2",
+  "private": true,
+  "description": "Simple sidenotes as jQuery plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henriklundgren/explainys.js.git"
+  },
+  "author": "heni@twitter",
+  "license": "MIT",
+  "licenseUrl": "http://opensource.org/licenses/MIT",
+  "bugs": {
+    "url": "https://github.com/henriklundgren/explainys.js/issues"
+  },
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "bootstrap": "twbs/bootstrap"
+  },
+  "homepage": "https://github.com/henriklundgren/explainys.js",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-csscomb": "^0.1.0",
+    "gulp-csso": "^0.2.8",
+    "gulp-esformatter": "^0.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.0",
+    "jquery": "^2.1.1"
+  }
+}
