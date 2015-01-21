@@ -1,0 +1,31 @@
+{
+"name": "Ptty",
+"title": "Ptty terminal emulator",
+"description": "jQuery plugin for creating an expansible terminal emulator.",
+"keywords": ["terminal", "CLI", "command", "line", "teletype", "input"],
+"version": "0.0.3",
+"author": {
+"name": "Patxi Pierce",
+"url": "https://github.com/pachanka/ptty"
+},
+"maintainers": [
+{
+"name": "Patxi Pierce",
+"email": "mail@patxipierce.com",
+"url": "http://patxipierce.com"
+}
+],
+"licenses": [
+{
+"type": "WTFPL",
+"url": "http://code.patxipierce.com/jquery-plugin/ptty/v/latest/COPYING"
+}
+],
+"bugs": "http://code.patxipierce.com/jquery-plugin/ptty#bugs",
+"homepage": "http://code.patxipierce.com/jquery-plugin/ptty",
+"docs": "http://code.patxipierce.com/jquery-plugin/ptty#usage",
+"download": "http://code.patxipierce.com/jquery-plugin/ptty/#download",
+"dependencies": {
+"jquery": ">=1.8.x"
+}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ptty example file.</title>
+    <link rel="stylesheet" type="text/css" href="css/Ptty.css">
+    <style>
+        html, body { margin:0; padding:0; height:100%; width:100%; }
+        body {
+            height:100%; 
+            width:100%;
+        }
+        a { color: #ddd; border-bottom: 1px solid; padding: 0 0 2px; text-decoration: none; }
+        a:hover { color: #fff; }
+        section { height:100%; width:100%; }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div id="terminal"></div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/Ptty.jquery.js"></script>
+<script>
+$(document).ready(function() {
+    /* Start Ptty terminal */ 
+    $('#terminal').Ptty();
+
+    $.register_command(
+        'about',
+        'Tells you a little about the Ptty jQuery Pulgin.',
+        'about [no options]',
+        function(){
+            var about = '<p>The <strong>Ptty</strong> jQuery plugin creates an extensible command line emulator.<br>'
+            + 'It allows ro register commands and callbacks that can connect to other plugins to extend it\'s usability.</p>'
+            + '<p>Got to the <a href="http://code.patxipierce.com/jquery-plugin/ptty/">Ptty jQuery plugin</a> '
+            + 'page to read more about Ptty or fork it on <a href="https://github.com/pachanka/ptty">Github</a>.</p>';
+
+            return {
+                type : 'print', 
+                out : about
+            };
+        }
+    );
+
+    /* Register Commands and Callbacks*/
+    $.register_command(
+        'date',
+        'returns the current date',
+        'date [no options]',
+        function(){
+            var now = new Date();
+            return {
+                type : 'print', 
+                out : now + ' '
+            };
+        }
+    );
+
+    $.register_command(
+        'type', // Unicode PS1
+        'Subcommand example.',
+        'type [no options]',
+        {
+            ps : 'type',
+            start_hook      : function(){ 
+                return {
+                    type : 'print',
+                    callback : 'typewriter',
+                    out : '',
+                    write : '&lt;p&gt;Hello, &lt;b&gt;type&lt;/b&gt; is a callback example that outputs text like a typewriter.&lt;br&gt;'
+                    +'Html tags are allowed so... pictures, iframes, all of it. Go crazy.&lt;br&gt;'
+                    +'You can type &lt;b&gt;exit&lt;/b&gt; anytime to go back to the main prompt.&lt;/p&gt;'
+                };
+            },
+            exit_hook       : function(){
+                return { 
+                    type : 'print',
+                    out : 'Exit signal recieved: Bye.'
+                };
+            },
+            dispatch_method : function(args){
+                return {
+                    type : 'print',
+                    callback : 'typewriter',
+                    out : '',
+                    write : args.join(' ')
+                };
+            }
+        }
+    );
+
+    // Typewriter effect callback
+    $.register_callback('typewriter', function(data){
+        var text_input = $('.cmd_terminal_prompt');
+        text_input.hide();
+        if(typeof data.write === 'string'){
+            // decode special entities.
+            var str = $('<div/>').html(data.write + ' ').text(),
+            typebox = $('<div></div>').appendTo('.cmd_terminal_content'),
+            i = 0,
+            isTag,
+            text;
+            (function typewriter() {
+                text = str.slice(0, ++i);
+                if (text === str) return text_input.show();
+
+                typebox.html(text);
+
+                var char = text.slice(-1);
+                if( char === '<' ) isTag = true;
+                if( char === '>' ) isTag = false;
+
+                if (isTag) return typewriter();
+                setTimeout(typewriter, 40);
+            }());
+        }
+    });
+
+});
+</script>
+</body>
+</html>
