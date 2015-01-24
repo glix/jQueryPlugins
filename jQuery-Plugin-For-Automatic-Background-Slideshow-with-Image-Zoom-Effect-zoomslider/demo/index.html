@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery zoomslider Plugin Demo</title>
+	<link rel="stylesheet" type="text/css" href="../dist/zoomslider.css" />
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+	<style>
+		/* Basic styling */
+		html, body {
+			margin: 0;
+			padding: 0;
+			background-color: #fff;
+			font-family: Georgia, serif;
+			line-height: 1.4;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: normal;
+			font-style: italic;
+		}
+		code {
+			display: block;
+			background-color: #eee;
+			padding: 2em;
+			overflow: scroll;
+			white-space: nowrap;
+		}
+		.body {
+			max-width: 800px;
+			padding: 40px;
+			margin: 0 auto;
+		}
+		.meta {
+			margin: 0 0 40px 0;
+			font-size: 0.8em;
+		}
+		.properties-table {
+			width: 100%;
+			padding: 0;
+			border-spacing: 0;
+			margin-top: 2em;
+			font-size: .85em;
+			background-color: #eee;
+		}
+		.properties-table th, .properties-table td {
+			text-align: left;
+			padding: 10px;
+		}
+		.properties-table th {
+			border-bottom: 1px solid #333;
+			line-height: 2;
+		}
+		/* End Basic styling */
+
+		
+		#demo-1 {
+			position: relative; /* can either be relative, absolute or fixed. If position is not set (i.e. static), it would be set to "relative" by script */
+			overflow: hidden; /* to bound the empty top space created by inner element's top margin */
+			width: 100%;
+			min-height: 400px;
+			background-color: #999;
+		}
+		.demo-inner-content {
+			position: relative;
+			z-index: 2;
+			margin: 180px auto;
+			padding: 40px;
+			max-width: 600px;
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.demo-inner-content h1 {
+			font-size: 2.5em;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="demo-1" data-zs-src='["https://unsplash.it/1600/1607?image=180", "https://unsplash.it/1600/1607?image=170", "https://unsplash.it/1600/1607?image=160"]' data-zs-overlay="dots">
+		<div class="demo-inner-content">
+			<h1><span>jQuery</span> . <span>zoomSlider</span></h1>
+			<p>Demo</p>
+		</div>
+	</div>
+
+	<div class="body">
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		
+	</div>
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../dist/jquery.zoomslider.min.js"></script>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import 'compass/css3/transform';
+
+$padding-xs: 10px;
+$padding-sm: 20px;
+$color-bullet-normal: #4a4a4a;
+$color-bullet-active: #cccccc;
+
+.zs-enabled {
+	position: relative;
+	.zs-slideshow,
+	.zs-slides,
+	.zs-slide {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.zs-slideshow {
+		.zs-slides {
+			.zs-slide {
+				background: transparent none no-repeat 50% 50%;
+		        background-size: cover;
+		        position: absolute;
+		        visibility: hidden;
+		        opacity: 0;
+		        @include scale(1.2, 1.2);
+		        &.active {
+		        	visibility: visible;
+		        	opacity: 1;
+		        }
+			}
+		}
+		.zs-bullets {
+			position: absolute;
+			z-index: 4;
+			bottom: $padding-sm;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			.zs-bullet {
+				display: inline-block;
+				cursor: pointer;
+				border: 2px solid $color-bullet-active;
+				width: 14px;
+				height: 14px;
+				border-radius: (16px / 2);
+				margin: $padding-xs;
+				background-color: $color-bullet-normal;
+				&.active {
+					background-color: $color-bullet-active;
+				}
+			}
+		}
+		&:after {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 3;
+			background: transparent none repeat 0 0;
+		}
+	}
+	&.overlay-plain .zs-slideshow:after {
+		background-image: url(plain.png);
+	}
+	&.overlay-dots .zs-slideshow:after {
+		background-image: url(dots.png);
+	}
+}
