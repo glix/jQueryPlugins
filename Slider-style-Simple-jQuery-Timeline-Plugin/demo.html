@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang='en' class='no-js'>
+<head>
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Simple-Timeline Plugin Demo</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/simple-timeline.css">
+<link rel="stylesheet" type="text/css" href="css/foundation.css">
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/slider/Slider-style-Simple-jQuery-Timeline-Plugin.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin:150px auto 30px auto; text-align:center">jQuery Simple-Timeline Plugin Demo</h1>
+<div id='flash'>
+  <button class='yselect' id="yprev"><</button>
+  <p class='currentYear'>0</p>
+  <button class='yselect' id="ynext">></button>
+  <div class='dateRight'>
+    <p class='currentDate'>0</p>
+  </div>
+  <div id='timelineWrap'>
+    <div class='months'>
+      <div class='monthLine firstlast' style="left: 0px"></div>
+      <div class='monthLine' style="left: 70.833px"></div>
+      <div class='monthLine' style="left: 140.666px"></div>
+      <div class='monthLine' style="left: 210.999px"></div>
+      <div class='monthLine' style="left: 281.332px"></div>
+      <div class='monthLine' style="left: 351.665px"></div>
+      <div class='monthLine' style="left: 421.998px"></div>
+      <div class='monthLine' style="left: 492.331px"></div>
+      <div class='monthLine' style="left: 562.664px"></div>
+      <div class='monthLine' style="left: 632.997px"></div>
+      <div class='monthLine' style="left: 703.33px"></div>
+      <div class='monthLine' style="left: 773.663px"></div>
+      <div class='monthLine firstlast' style="left: 849px"></div>
+    </div>
+  </div>
+  <div id="contentWrap row">
+    <div class="large-1 columns">
+      <div class='dbuttons'>
+        <button class='dselect' id='dprev'><</button>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2012-03-12'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2015/01/idyllic-lake-landscape-4062-824x550.jpeg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Simple Timeline 0.1</p>
+        <p class="eventDate">2012-03-12</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2012-08-01'>
+      <div class="large-6 columns">
+        <p class="eventTitle">Layout #2</p>
+        <p class="eventDate">2012-08-01</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2015/01/animal-bigfoot-evolution-4075-825x550.jpg" alt="me" /> <br/>
+        <br/>
+        <img src="http://static.pexels.com/wp-content/uploads/2015/01/curve-hills-mountains-4033-821x550.jpeg" /> </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2012-10-08'>
+      <div class="large-12 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/06/apple-desk-imac-1712-1072x550.jpg" /> </div>
+      <div class="large-12 columns">
+        <p class="eventTitle">Layout #3</p>
+        <p class="eventDate">2012-10-08</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-01-01'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2015/01/apple-business-coffee-4159-825x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Five dates #1</p>
+        <p class="eventDate">2013-01-01</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-01-02'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2015/01/animal-deer-nature-4099-824x550.jpeg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Five dates #2</p>
+        <p class="eventDate">2013-01-02</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-01-03'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2015/01/apple-iphone-iphone-6-4152-825x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Five dates #3</p>
+        <p class="eventDate">2013-01-03</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-01-04'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/07/beans-coffee-cup-2059-825x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Five dates #4</p>
+        <p class="eventDate">2013-01-04</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-01-05'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/09/animal-brown-bear-dangerous-2740-825x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Five dates #5</p>
+        <p class="eventDate">2013-01-05</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-04-17'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/08/bulb-electric-spark-electricity-2396-366x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Just another example</p>
+        <p class="eventDate">2013-04-17</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-12-31'>
+      <div class="large-12 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/07/beach-champagne-clink-glasses-2145-825x550.jpg" alt="me" /> </div>
+      <div class='large-12 columns'>
+        <p class="eventTitle">The last post of a year</p>
+        <p class="eventDate">2013-12-31</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2013-07-22'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/06/clouds-colorful-colourful-1029-1142x550.jpg" alt="me" /> <br/>
+        <br/>
+        <img src="http://static.pexels.com/wp-content/uploads/2014/09/apple-desk-iphone-2750-830x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Multiple photos support</p>
+        <p class="eventDate">2013-07-22</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class='tlcontainer large-10 columns row' data-date='2014-06-10'>
+      <div class="large-6 columns"> <img src="http://static.pexels.com/wp-content/uploads/2014/09/looking-man-mountains-2857-825x550.jpg" alt="me" /> </div>
+      <div class='large-6 columns'>
+        <p class="eventTitle">Automatic button disable</p>
+        <p class="eventDate">2014-06-10</p>
+        <p class="eventContent"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac ante porttitor, rhoncus felis ac, finibus massa. Duis ligula mauris, condimentum quis cursus eu, cursus a augue. Vivamus tempus, libero ultricies maximus tristique, leo ante accumsan dui, ut tincidunt lorem risus nec arcu. Duis quis quam rhoncus, rutrum nulla in, tempor dui. Aliquam erat volutpat. Duis vel elit convallis, dignissim turpis vitae, venenatis velit. In iaculis dignissim lacus, id sodales dui pharetra vel. Vivamus ac ante odio. Maecenas orci nulla, dapibus ac sollicitudin eu, facilisis ut erat. Aliquam facilisis metus vitae mauris posuere rutrum.<br/>
+          <br/>
+          Donec mi nulla, venenatis ut elit et, volutpat auctor nisl. Fusce laoreet eu dui at faucibus. Proin tempor tempus mauris, suscipit cursus augue. In sed erat massa. Duis non tortor nunc. Nunc pellentesque leo vitae ipsum pretium, vel porttitor tellus fermentum. </p>
+      </div>
+    </div>
+    <div class=" large-1 columns">
+      <div class='dbuttons'>
+        <button class ='dselect' id='dnext'>></button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script> 
+<script src="simple-timeline.jquery.js"></script> 
+<script>
+
+  $('div.tlcontainer').simpleTimeline();
+  
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
