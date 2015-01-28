@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery RisingSun Plugin Demo</title>
+<link rel="styleSheet" type="text/css" href="css/import.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.risingSun.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+<div id="topArea"><div class="center980">
+	<h1><img src="images/logo.png" height="122" width="579" alt="" /></h1>
+	<div id="sun"><img src="images/rising.png" height="178" width="396" alt="" /></div>
+	<div id="dot"><img src="images/dot.png" height="23" width="24" alt="" /></div>
+	<div class="jquery-script-ads" style="margin:20px auto" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+	<p id="auther">written by Kiyoshi Honda</p>
+	<div id="down" class="al"><a href="#sceneHowto"><img src="images/down.png" height="27" width="221" alt="" /></a></div>
+</div></div>
+
+
+<div id="scene1"><div class="center980">
+	<h2>Sample Animation</h2>
+	<div id="fadein"><img src="images/fadein.png" height="198" width="198" alt="" /></div>
+	<div id="scalein"><img src="images/scalein.png" height="198" width="198" alt="" /></div>
+	<div id="movein"><img src="images/movein.png" height="198" width="198" alt="" /></div>
+	<div id="tx1" class="textbox">
+	$("<span class="classname">#fadein</span>").RisingSun({duration:300});<br>
+	$("<span class="classname">#scalein</span>").RisingSun({duration:500,<span class="point">scale:0.1</span>,ease:"easeInCubic"});<br>
+	$("<span class="classname">#movein</span>").RisingSun({duration:800,<span class="point">x:50</span>,<span class="point">y50</span>,ease:"easeOutCubic"});<br>
+	</div>
+	<div id="popin"><img src="images/popin.png" height="280" width="280" alt="" /></div>
+	<div id="tx2" class="textbox">
+	$("<span class="classname">#popin</span>").RisingSun({<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration:300,scale:0.1,<span class="point">popanime:true</span>,ease:"easeOutCubic",replay:true<br>
+	});<br>
+	</div>
+	<div id="wipein"><img src="images/wipein.png" height="131" width="527" alt="" /></div>
+	<div id="tx3" class="textbox">
+	$("<span class="classname">#wipein</span>").RisingSun({<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration:1200,<span class="point">wipe:"LR"</span>,ease:"easeInOutCubic",replay:true<br>
+	});<br>
+	</div>
+</div></div>
+
+<div id="scene2"><div class="center980">
+	<h2>Timer and Callback</h2>
+	<div id="timerclick" class="al"><a href="javascript:void();"><img src="images/click.png" height="117" width="116" alt="" /></a></div>
+	<div id="timer"><img src="images/timer.png" height="281" width="280" alt="" /></div>
+	<div id="callback1"><img src="images/callback1.png" height="33" width="33" alt="" /></div>
+	<div id="callback2"><img src="images/callback2.png" height="52" width="52" alt="" /></div>
+	<div id="callback3"><img src="images/callback3.png" height="79" width="79" alt="" /></div>
+	<div id="tx4" class="textbox">
+	$("<span class="classname">#timer</span>").RisingSun({<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="point">timer:1500,</span>duration:300,scale:0.1,popanime:true,startPosition:0.7,ease:"easeOutCubic"<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="point">onComplete:function()</span>{<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("<span class="classname">#callback1</span>").RisingSun({timer:0,duration:300,scale:0.1,popanime:true,ease:"easeOutCubic"});<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("<span class="classname">#callback2</span>").RisingSun({timer:100,duration:300,scale:0.1,popanime:true,ease:"easeOutCubic"});<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("<span class="classname">#callback3</span>").RisingSun({timer:200,duration:300,scale:0.1,popanime:true,ease:"easeOutCubic"});<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+	});<br>
+	
+
+	</div>
+</div></div>
+
+
+<div id="footer"><div class="center980">
+	<div id="copyright">©Copyright Kiyoshi Honda All right reserved.</div>
+</div></div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>

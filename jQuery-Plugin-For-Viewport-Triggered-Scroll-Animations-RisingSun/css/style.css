@@ -1,0 +1,269 @@
+/* ──────────────────────────────────────────────────────────────────
+contents
+────────────────────────────────────────────────────────────────── */
+
+body{
+	font-family:'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif,Helvetica, Arial;
+	background:#354751;
+	color:#fff;
+}
+a{
+	color:#349ae2;
+	text-decoration: underline;
+}
+a:hover{
+	color:#349ae2;
+	text-decoration:none;
+}
+.point{
+	color:#FF0352;
+}
+.classname{
+	color:#5EA800;
+}
+.blue{
+	color:#3a7fe6;
+}
+.textbox{
+	width: 800px;
+	background: #EBE7DD;
+	padding:20px 30px;
+	color:#000;
+	font-size:11px;
+	line-height: 1.8em;
+	margin-left: auto;
+	margin-right: auto;
+}
+#topArea{
+	background:#F94E67;
+	min-width:980px;
+	width: 100%;
+}
+.center980{
+	width: 980px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+h1{
+	position: absolute;
+	top: 219px;
+	left: 219px;
+	display: none;
+}
+h2{
+
+	text-align: center;
+	font-size:58px;
+	font-weight: bold;
+	color:#fff;
+}
+#sun{
+	position: absolute;
+	top: 38px;
+	left: 300px;
+	display: none;
+}
+#dot{
+	position: absolute;
+	top: 289px;
+	left: 180px;
+	display: none;
+}
+h4{
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing:0.2em;
+	position: relative;
+	top: 380px;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+#auther{
+	font-size:11px;
+	color:#fff;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 340px;
+}
+#download{
+	width: 150px;
+	height: 24px;
+	background:#239793;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	top: 450px;
+	letter-spacing:0.25em;
+	font-size:12px;
+	padding-top: 5px;
+	display: none;
+}
+#download a{
+	color:#fff;
+	text-decoration: none;
+}
+#down{
+	position:absolute;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+#sceneHowto{
+	min-width:980px;
+	width: 100%;
+	height:400px;
+	background: #fff;
+}
+#sceneHowto h2{
+	text-align: center;
+	font-size:58px;
+	font-weight: bold;
+	color:#888;
+	padding-top: 50px;
+}
+#sceneHowto #howtotext{
+	margin-top: 40px;
+}
+#scene1{
+	min-width:980px;
+	width: 100%;
+	height:1600px;
+}
+#scene1 h2{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	text-align: center;
+	font-size:58px;
+	font-weight: bold;
+}
+#scene1 #fadein{
+	position: absolute;
+	left: 130px;
+	top: 225px;
+	display: none;
+}
+#scene1 #scalein{
+	position: absolute;
+	left: 385px;
+	top: 225px;
+	display: none;
+}
+
+#scene1 #movein{
+	position: absolute;
+	left: 640px;
+	top: 225px;
+	display: none;
+}
+#scene1 #tx1{
+	top: 500px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+#scene1 #popin{
+	position: absolute;
+	top: 700px;
+	left: 340px;
+	display: none;
+}
+#scene1 #tx2{
+	top: 880px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+#scene1 #wipein{
+	position: absolute;
+	top: 1280px;
+	left: 240px;
+}
+#scene1 #tx3{
+	top: 1100px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+#scene2{
+	min-width:980px;
+	width: 100%;
+	position: relative;
+	height: 800px;
+}
+#scene2 h2{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	text-align: center;
+	font-size:58px;
+	font-weight: bold;
+}
+#scene2 #timerclick{
+	position: absolute;
+	top: 250px;
+	left: 430px;
+}
+#scene2 #callback1{
+	position: absolute;
+	top: 125px;
+	left: 735px;
+	display: none;
+}
+#scene2 #callback2{
+	position: absolute;
+	top: 175px;
+	left: 720px;
+	display: none;
+}
+#scene2 #callback3{
+	position: absolute;
+	top: 220px;
+	left: 640px;
+	display: none;
+}
+#scene2 #timer{
+	position: absolute;
+	top: 150px;
+	left: 345px;
+	display: none;
+}
+#scene2 #tx4{
+	top: 480px;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#reference{
+	background: #239793;
+	width: 100%;
+	padding-bottom: 150px;
+}
+#reference h2{
+	padding-top: 50px;
+}
+#Referencetext{
+	margin-top: 50px;
+	line-height: 2.0em;
+}
+#Referencetext .op{
+	color:#f15980;
+	font-weight: bold;
+}
+#footer{
+	height:80px;
+	background: #fff;
+}
+#copyright{
+	padding-top: 30px;
+	width: 100%;
+	text-align: center;
+	color:#444;
+	font-size:11px;
+}
+
