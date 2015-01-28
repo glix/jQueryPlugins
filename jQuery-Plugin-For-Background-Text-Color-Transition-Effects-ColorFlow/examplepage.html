@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ColorFlow jQuery Plugin Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/colorFlow.js"></script>
+<style>
+span:hover { text-shadow: 0px 0px 1px rgba(0,0,0,0.35) }
+
+#codepin {
+  position: absolute;
+  left: 50%
+}
+
+pre {
+  position: absolute;
+  left: -283px
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'roboto';
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.45)
+}
+</style>
+<style>
+@media(min-width:1920px) {
+
+pre {
+  font-size: 22px!important;
+  left: -461px!important
+}
+
+h1 { font-size: 135px!important }
+
+span { font-size: 29px!important }
+}
+@media(min-width:1280px) {
+
+pre {
+  font-size: 17px;
+  left: -355px
+}
+
+h1 { font-size: 95px }
+
+span { font-size: 20px }
+}
+@media(max-width:570px) {
+
+pre {
+  font-size: 10px;
+  left: -213px
+}
+
+h1 { font-size: 55px }
+}
+@media(max-width:400px) {
+
+pre {
+  font-size: 7px;
+  left: -150px;
+}
+
+h1 { font-size: 55px }
+}
+</style>
+</head>
+
+<body>
+<div style="text-align:center;">
+  <h1>ColorFlow</h1>
+  <div class="jquery-script-ads" style="margin:20px auto;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div>
+<script>
+      $('body').colorFlow({
+          background: ['#85144b', '#F012BE', '#FFBC00', '#7FDBFF', '#01FF70'],
+          text: ['#CF5D94', '#EFA9FA', '#665800', '#004966', '#00662C'],
+          time: 25
+      });
+  </script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
