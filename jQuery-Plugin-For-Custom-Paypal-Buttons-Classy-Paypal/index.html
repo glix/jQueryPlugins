@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Classy Paypal Plugin Demo</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.classypaypal.css" rel="stylesheet" type="text/css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+body { font-family:'roboto', sans-serif; background-color:#444;}
+.container { margin:150px auto; max-width:960px;}
+</style>
+
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<button class="paypal ClassyPaypal-button"
+    data-business="example@yourdomain.com" 
+    data-item_name="jQuery ClassyPaypal Plugin" 
+    data-amount="10.99" 
+    data-quantity="1"
+    data-currency_code="USD">Just $10.99!</button>
+<button id="paypal2" class="ClassyPaypal-button"
+    data-business="example@yourdomain.com" 
+    data-item_name="jQuery ClassyPaypal Plugin" 
+    data-amount="12" 
+    data-quantity="1"
+    data-currency_code="USD">Buy Now</button>
+    
+<button id="paypal3" class="ClassyPaypal-button"
+    data-business="example@yourdomain.com" 
+    data-item_name="jQuery ClassyPaypal Plugin"
+    data-amount="10" 
+    data-quantity="2"
+    data-discount_amount="2.01"
+    data-currency_code="USD">PURCHASE</button><br>
+<br>
+
+<button id="paypal4" class="ClassyPaypal-button"
+    data-business="example@gmail.com"
+    data-item_name="jQuery ClassyPaypal Plugin" 
+    data-amount="200" 
+    data-quantity="1" 
+    data-currency_code="USD">
+    <span class="ClassyPaypal-label">Order today</span>
+    <span class="ClassyPaypal-price">$150</span>
+</button>
+<button id="paypal5" class="ClassyPaypal-button"
+    data-business="example@gmail.com" 
+    data-item_name="Donation to support our work"
+    data-lc="US"
+    data-no_note="0"
+    data-currency_code="USD">Donate!
+</button>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/jquery.classypaypal.min.js"></script>
+<script>
+$('.paypal').ClassyPaypal({
+    type: 'buynow',
+    style: 'default'
+});
+$('#paypal2').ClassyPaypal({
+    type: 'buynow',
+    style: 'round'
+});
+$('#paypal3').ClassyPaypal({
+    type: 'buynow',
+    style: 'frame'
+});
+$('#paypal4').ClassyPaypal({
+    type: 'donate',
+    style: 'square'
+});
+$('#paypal5').ClassyPaypal({
+    type: 'subscribe',
+    style: 'default'
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

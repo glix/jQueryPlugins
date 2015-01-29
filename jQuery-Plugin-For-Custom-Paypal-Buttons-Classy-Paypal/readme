@@ -1,0 +1,9 @@
+ClassyPaypal is a jQuery plugin that allows you to quickly add stylish PayPal payment
+buttons to your website for instant and secure payments.
+
+@name ClassyPaypal
+@package jQuery plugin
+@author Marius Stanciu - Sergiu <marius@class.pm>
+@website http://www.class.pm/
+@version 1.0.0
+@license MIT www.class.pm/LICENSE-MIT
