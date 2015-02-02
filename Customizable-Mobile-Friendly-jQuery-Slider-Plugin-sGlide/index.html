@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- <meta name="viewport" content="width=560, user-scalable=0"> -->
+<!--meta name="viewport" content="width=700; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;"-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<title>sGlide - working</title>
+
+<link rel="stylesheet" href="main.css" />
+
+<style>
+/*#slider1 {transform-origin: 460px 260px !important;}*/
+/*#slider2 {margin: -130px -290px !important;}*/
+/*#slider1 {margin-left: 60px !important;}*/
+/*.follow_bar {background-color: #960;}*/
+#slider1_vert-marks {margin-left: 60px !important;}
+</style>
+
+<!-- <script type="text/javascript" src="polyfills.js"></script> -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="jquery.sglide.js"></script>
+<!-- <script type="text/javascript" src="sglide.js"></script> -->
+<!-- <script type="text/javascript" src="../../~web~/sGlide/jquery.sglide.2.min.js"></script> -->
+<!-- <script type="text/javascript" src="../../~web~/sGlide/sglide.2.1.1.min.js"></script> -->
+
+<script type="text/javascript">
+	function run(){
+		/*sglideArr = [];
+		// var elsArr = document.getElementsByClassName('slider_bar');
+		var elsArr = [document.getElementById('slider1'), document.getElementById('slider2')];
+
+		for (var i = 0; i < elsArr.length; i++) {
+			sglideArr.push(new sGlide(elsArr[i], {
+				'startAt': 30*(i+1),
+				'height': 20,
+				'width': 600,
+				'unit': 'px',
+				// 'image': 'img/knob_.png',
+				// 'pill': false,
+				'snap': {
+					'marks': true,
+					// 'type': 'soft',
+					'points': 6
+				},
+				'colorShift': ['#3a4d31', '#7bb560'],
+				// 'vertical': true,
+				'buttons': true,
+				'totalRange': [58,102],
+				// 'disabled': true,
+				drop: function(o){
+					console.log('> drop',o);
+					// console.log(o.id,o.value, this.element);
+					// document.getElementById('percent').innerHTML = o.id+': '+Math.round(o.value) + '%';
+				},
+				onSnap: function(o){
+					console.log('> snap',o);
+				}
+			}));
+		}
+
+		console.log('sglideArr',sglideArr);*/
+
+		$('.slider_bar').sGlide({
+			'startAt': 50,
+			'width': 600,
+			'height': 22,
+			'unit': 'px',
+			// 'image': 'img/knob_.png',
+			// 'pill': false,
+			'totalRange': [58,102],
+			// 'locked': true,
+			'snap': {
+				'marks': true,
+				'type': 'soft',
+				'points': 3
+			},
+			'colorShift': ['#3a4d31', '#7bb560'],
+			// 'vertical': true,
+			'buttons': true,
+			// 'disabled': true,
+			// drag: function(o){
+			// 	console.log('> drag',o);//,o.id,o);
+			// },
+			onButton: function(o){
+				console.log('> onButton',o);//,o.id,o);
+			}
+		});
+	};
+</script>
+
+</head><body onload="run()">
+
+	<div id="percent">%</div>
+	<div id="slider1" class="slider_bar" data-keys="shift" style="background-color:#069; border-radius:10px; height:40px"></div><br /><!-- <div id="slider2" class="slider_bar"></div> -->
+	<br><input type="text" value="asdljkas dlkajsd lakjs dlasjd">
+
+</body></html>
