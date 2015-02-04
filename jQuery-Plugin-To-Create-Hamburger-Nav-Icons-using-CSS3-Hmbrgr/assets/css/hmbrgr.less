@@ -1,0 +1,31 @@
+@import "lesshat.less";
+
+.hmbrgr{
+	position: relative;
+	display: inline-block;
+
+	span{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		display: inline-block;
+	}
+
+	&.expand{
+		span{
+
+			&:nth-child(1){
+				.transform(rotate(-45deg));
+			}
+
+			&:nth-child(2){
+				.opacity(0);
+			}
+
+			&:nth-child(3){
+				.transform(rotate(45deg));
+			}
+		}
+	}
+}

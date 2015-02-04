@@ -1,0 +1,71 @@
+doctype
+html
+	head(lang="en")
+		title HMBRGR
+		meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+		link(rel="stylesheet", href="assets/css/base.css", type="text/css")
+		link(rel="stylesheet", href="assets/css/hmbrgr.min.css", type="text/css")
+	body
+
+		header
+			h1 Hmbrgr jQuery Plugin
+				h3 By 
+					a(href="http://codepen.io/MorenoDiDomenico/", target="_blank") Moreno Di Domenico
+
+		section.one
+			a(href="#", class="hmbrgr one")
+
+		section.two
+			a(href="#", class="hmbrgr two")
+
+		section.three
+			a(href="#", class="hmbrgr three")
+
+		section.four
+			a(href="#", class="hmbrgr four")
+
+		section.five
+			a(href="#", class="hmbrgr five")
+
+		section.six
+			a(href="#", class="hmbrgr six")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script(src="assets/js/jquery.hmbrgr.min.js")
+
+		script.
+			$('.hmbrgr.one').hmbrgr();
+
+			$('.hmbrgr.two').hmbrgr({
+			  width     : 100,
+			  height    : 80,
+			  barHeight : 1
+			});
+
+			$('.hmbrgr.three').hmbrgr({
+			  width     : 100,
+			  height    : 80,
+			  barHeight : 15,
+			  barRadius : 10
+			});
+
+			$('.hmbrgr.four').hmbrgr({
+			  width     : 110,
+			  height    : 90,
+			  barHeight : 9,
+			  barRadius : 3,
+			  barColor  : '#2a2a2a'
+			});
+
+			$('.hmbrgr.five').hmbrgr({
+			  width     : 80,
+			  height    : 70,
+			  barHeight : 5,
+			  barRadius : 10
+			});
+
+			$('.hmbrgr.six').hmbrgr({
+			  width     : 100,
+			  height    : 80,
+			  barHeight : 5
+			});
