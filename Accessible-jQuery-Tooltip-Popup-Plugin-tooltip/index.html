@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <title>Accessible jQuery Tooltip Plugin Demo</title>
+  <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+  <style>
+#container {
+  max-width: 960px;
+  margin: 150px; auto;
+}
+
+
+body {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+h1 { font-size: 3.5em; }
+
+p { font-size: 2.2em; }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+}
+
+.anchor-text { border-bottom: 1px solid #333; }
+ [role=tooltip] {
+ box-shadow: 1px 1px 0 0 lightgray;
+ margin:8px;
+ padding:8px;
+ border:1px solid lightgray;
+ background-color: floralwhite;
+ position: absolute;
+ z-index: 2;
+ font-size: 1.7em;
+}
+ [role=tooltip][aria-hidden=true] {
+ display: none;
+}
+ [role=tooltip][aria-hidden=false] {
+ display: block;
+}
+ [aria-haspopup=true] {
+ background: url(assets/help.svg);
+ background-repeat: no-repeat;
+ -webkit-background-size: 0.8em 0.8em;
+ background-size: 0.8em 0.8em;
+ background-position: 0 50%;
+ padding-left: 0.9em;
+ margin-left: 0.1em;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/tooltip/Accessible-jQuery-Tooltip-Popup-Plugin-tooltip.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div id="container">
+    <h1>Accessible jQuery Tooltip Plugin Demos</h1>
+    <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, voluptas in hic id nisi tenetur aperiam et! Porro, temporibus, <a
+          href="#"
+          class="tooltip"
+          aria-haspopup="true"
+          aria-describedby="tip1"> <span class="anchor-text" role="presentation">I have a tooltip</span> </a> assumenda commodi natus cumque quisquam reiciendis fugit provident voluptates eaque asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, inventore, quae, rerum repellendus at est neque vitae <a
+          href="#"
+          class="tooltip"
+          aria-haspopup="true"
+          aria-describedby="tip2"> <span class="anchor-text" role="presentation">I also have a tooltip</span> </a> facere numquam autem ducimus ipsa itaque modi ex eius facilis incidunt delectus in.</p>
+  </main>
+    <div role="tooltip" id="tip1" aria-hidden="true"> First tooltip </div>
+    <div role="tooltip" id="tip2" aria-hidden="true"> Second tooltip with 5% <strong><em>real</em></strong> HTML </div>
+  </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<script src="js/tooltip.js"></script> 
+<script>
+    $(document).ready(function() {
+      $(".tooltip").tooltip();
+    });
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
