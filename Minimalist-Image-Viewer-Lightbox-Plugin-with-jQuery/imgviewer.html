@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <script src="jq.js"></script>
+  <script src="imgViewer.js"></script>
+  <script>
+    $.bindViewer(".viewer-item");  //支持绑定到动态生成的元素
+  </script>
+  <title>test</title>
+</head>
+<body>
+  <span>222</span><p>213</p>
+  <a href="javascript:void(0);"><img class="viewer-item" src="img/1.jpg" style="width:50px;height:50px;"/></a>
+  <img class="viewer-item" src="img/2.jpg" style="width:50px;height:50px;cursor:pointer;"/>
+  <img class="viewer-item" src="img/3.jpg" style="width:50px;height:50px;"/>
+  <p>213</p><p>213</p><p>213</p><p>213</p>
+
+</body>
+</html>
