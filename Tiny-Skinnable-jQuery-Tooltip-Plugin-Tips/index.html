@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<title>jQuery Tips Plugin Examples</title>
+
+<link href="dist/jQuery.tips.css" rel="stylesheet" type="text/css">
+<style>
+* { font-family:'roboto', sans-serif}
+.container { margin:150px auto; width:760px;}
+.tip.my-skin .tip-inner {
+  background: #009688;
+  color: #fff;
+}
+
+.tip.my-skin .arrow-front {
+  border-top-color: #009688;
+  border-bottom-color: #009688;
+}
+
+.tip.my-skin .arrow-back {
+  border-top-color: #009688;
+  border-bottom-color: #009688;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/tooltip/Tiny-Skinnable-jQuery-Tooltip-Plugin-Tips.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery Tips Plugin Examples</h1>
+<p><span class="demo-1" style="text-decoration:underline;">Default Skin</span> dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus finibus bibendum. Duis nec lacus id neque euismod cursus nec sed nibh. Mauris luctus eros mi, at consectetur enim convallis sed. Suspendisse vitae auctor orci. Proin facilisis, magna nec interdum iaculis, felis sapien ultricies lacus, eu condimentum lacus tellus vitae ipsum. Morbi quis fringilla urna. Suspendisse finibus neque dolor, vel euismod nibh ornare eget. Mauris faucibus posuere lectus sodales gravida. Mauris posuere convallis libero ac sodales. Donec consequat, augue cursus mattis tempor, lorem eros fringilla nisi, sed posuere arcu leo vitae felis. Aliquam aliquam turpis nec sapien ullamcorper, eget cursus dolor pulvinar.</p>
+<p><span class="demo-2" style="text-decoration:underline;">White Skin</span> est a nisi condimentum euismod sit amet id nisl. Etiam nunc ipsum, vehicula vitae ipsum a, pretium mollis mauris. Donec vestibulum gravida felis at aliquet. Aliquam iaculis suscipit commodo. Phasellus et tortor dui. In lorem sem, pulvinar eu est quis, consectetur feugiat dolor. Donec odio arcu, bibendum sed commodo eget, mattis vel ante. Aliquam diam tellus, aliquam nec tempus sed, posuere et tellus.</p>
+<p><span class="demo-3" style="text-decoration:underline;">Custom Skin</span> Donec eu risus eu sem dapibus consequat. Vestibulum facilisis luctus pharetra. Nullam volutpat, libero vel finibus pretium, nisl augue semper orci, a dictum est odio ut augue. Nulla vitae nisi sed neque iaculis ullamcorper. Mauris finibus velit sed odio porta, id porttitor odio posuere. Maecenas varius, nibh vel luctus laoreet, orci enim accumsan leo, in vestibulum lacus turpis sit amet urna. Suspendisse pulvinar vulputate mauris.</p>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="dist/jQuery.tips.js"></script>
+<script>
+$('.demo-1').tips({
+	msg: 'This is the tips content.'
+});
+$('.demo-2').tips({
+	skin: 'white',
+	msg: 'This is the tips content.'
+});
+$('.demo-3').tips({
+	skin: 'my-skin',
+	msg: 'This is the tips content.'
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

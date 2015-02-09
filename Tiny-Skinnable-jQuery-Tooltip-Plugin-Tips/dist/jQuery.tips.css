@@ -1,0 +1,82 @@
+
+/*! CopyRight: Aisin http://github.com/aisin/Tips, Licensed under: MIT */
+
+/* Tips - Basic */
+
+.tip {
+  position: absolute;
+  padding: 7px 0;
+  display: none;
+  z-index: 99;
+}
+
+.tip .tip-inner {
+  font-size: 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.tip .tip-content { padding: 8px; }
+
+.tip .arrow {
+  width: 0;
+  height: 0;
+  border-width: 0 8px 0 8px;
+  border-style: solid dashed none;
+  position: absolute;
+  left: 16px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.tip.top .arrow {
+  border-top-width: 8px;
+  border-style: solid dashed none;
+}
+
+.tip.top .arrow-front { bottom: 2px; }
+
+.tip.top .arrow-back { bottom: 1px; }
+
+.tip.bottom .arrow {
+  border-bottom-width: 8px;
+  border-style: none dashed solid;
+}
+
+.tip.bottom .arrow-front { top: 2px; }
+
+.tip.bottom .arrow-back { top: 1px; }
+
+/* Tips - Skin : white */
+
+.tip.white .tip-inner {
+  background: #fff;
+  color: #888;
+}
+
+.tip.white .arrow-front {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.tip.white .arrow-back {
+  border-top-color: #e8e8e8;
+  border-bottom-color: #e8e8e8;
+}
+
+/* Tips - Skin : black */
+
+.tip.black .tip-inner {
+  background: #000;
+  color: #fff;
+}
+
+.tip.black .arrow-front {
+  border-top-color: #000;
+  border-bottom-color: #000;
+}
+
+.tip.black .arrow-back {
+  border-top-color: #000;
+  border-bottom-color: #000;
+}
