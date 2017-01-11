@@ -147,6 +147,18 @@
             HoursLeft = Math.floor((secondsLeft % 86400) / 3600);
             MinutesLeft = Math.floor(((secondsLeft % 86400) % 3600) / 60);
             SecondsLeft = Math.floor((((secondsLeft % 86400) % 3600) % 60) % 60);
+            if (DaysLeft === 0) {
+                element.find('.ClassyCountdown-days input').trigger("configure", settings.style.days.gaugeEnd);
+            }
+            if (HoursLeft === 0 && DaysLeft === 0) {
+                element.find('.ClassyCountdown-hours input').trigger("configure", settings.style.hours.gaugeEnd);
+            }
+            if (MinutesLeft === 0 && HoursLeft === 0) {
+                element.find('.ClassyCountdown-minutes input').trigger("configure", settings.style.minutes.gaugeEnd);
+            }
+            if (SecondsLeft === 0 && MinutesLeft === 0 && HoursLeft === 0) {
+                element.find('.ClassyCountdown-seconds input').trigger("configure", settings.style.seconds.gaugeEnd);
+            }
         }
 
         function doTick() {
@@ -664,6 +676,9 @@
                                     fgColor: "#fff",
                                     lineCap: 'round'
                                 },
+                                gaugeEnd: {
+                                    fgColor: "#666"
+                                },
                                 textCSS: 'font-family:\'Open Sans\';font-weight:300;color:#fff;'
                             },
                             hours: {
@@ -672,6 +687,9 @@
                                     bgColor: "rgba(255,255,255,0.05)",
                                     fgColor: "#fff",
                                     lineCap: 'round'
+                                },
+                                gaugeEnd: {
+                                    fgColor: "#666"
                                 },
                                 textCSS: 'font-family:\'Open Sans\';font-weight:300;color:#fff;'
                             },
@@ -682,6 +700,9 @@
                                     fgColor: "#fff",
                                     lineCap: 'round'
                                 },
+                                gaugeEnd: {
+                                    fgColor: "#666"
+                                },
                                 textCSS: 'font-family:\'Open Sans\';font-weight:300;color:#fff;'
                             },
                             seconds: {
@@ -690,6 +711,9 @@
                                     bgColor: "rgba(255,255,255,0.05)",
                                     fgColor: "#fff",
                                     lineCap: 'round'
+                                },
+                                gaugeEnd: {
+                                    fgColor: "#666"
                                 },
                                 textCSS: 'font-family:\'Open Sans\';font-weight:300;color:#fff;'
                             }
