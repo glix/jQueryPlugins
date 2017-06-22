@@ -138,7 +138,7 @@
                 element.find(".ClassyCountdown-seconds .ClassyCountdown-value > span").html(settings.labelsOptions.lang.seconds);
                 element.find(".ClassyCountdown-value > span").attr("style", settings.labelsOptions.style);
             }
-            secondsLeft = settings.end - settings.now;
+            secondsLeft = (settings.end - settings.now)/1000;
             secondsToDHMS();
         }
         
